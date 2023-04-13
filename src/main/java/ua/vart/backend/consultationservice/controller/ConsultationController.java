@@ -10,7 +10,8 @@ import ua.vart.backend.consultationservice.service.PsychologistService;
 
 import java.util.List;
 
-@RestController("/api/v1/consultations")
+@RestController
+@RequestMapping("/api/v1/consultations")
 @RequiredArgsConstructor
 public class ConsultationController {
     private final ConsultationService consultationService;

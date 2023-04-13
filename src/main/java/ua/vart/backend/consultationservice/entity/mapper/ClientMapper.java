@@ -6,7 +6,7 @@ import ua.vart.backend.consultationservice.entity.dto.ClientDto;
 
 import java.util.List;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ClientMapper {
     ClientDto entityToDto(Client client);
     Client dtoToEntity(ClientDto clientDto);

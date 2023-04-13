@@ -6,7 +6,8 @@ import ua.vart.backend.consultationservice.entity.dto.PsychologistDto;
 import ua.vart.backend.consultationservice.entity.mapper.PsychologistMapper;
 import ua.vart.backend.consultationservice.service.PsychologistService;
 
-@RestController("/api/v1/psychologist")
+@RestController
+@RequestMapping("/api/v1/psychologist")
 @RequiredArgsConstructor
 public class PsychologistController {
     private final PsychologistService psychologistService;

@@ -6,7 +6,7 @@ import ua.vart.backend.consultationservice.entity.dto.PsychologistDto;
 
 import java.util.List;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface PsychologistMapper {
     PsychologistDto entityToDto(Psychologist psychologist);
     Psychologist dtoToEntity(PsychologistDto psychologistDto);

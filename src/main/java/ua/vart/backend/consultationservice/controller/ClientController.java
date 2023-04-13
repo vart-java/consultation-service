@@ -8,7 +8,8 @@ import ua.vart.backend.consultationservice.service.ClientService;
 
 import java.util.List;
 
-@RestController("/api/v1/clients")
+@RestController
+@RequestMapping("/api/v1/clients")
 @RequiredArgsConstructor
 public class ClientController {
     private final ClientService clientService;
